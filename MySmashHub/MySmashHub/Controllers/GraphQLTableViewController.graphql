@@ -1,0 +1,24 @@
+query LeagueSchedule {
+  league(slug: "twt") {
+	id
+	name
+	events(query: {
+	  page: 1,
+	  perPage: 10
+	}) {
+	  pageInfo {
+		totalPages
+		total
+	  }
+	  nodes {
+		id
+		name
+		startAt
+		tournament {
+		  id
+		  name
+		}
+	  }
+	}
+  }
+}
