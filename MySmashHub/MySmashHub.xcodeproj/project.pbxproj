@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D4531ED7E23B07FB16BDC822 /* Pods_MySmashHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20938252C21EBFA938D41F06 /* Pods_MySmashHub.framework */; };
+		EB278E9025886A5D00DCD16C /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = EB278E8F25886A5D00DCD16C /* schema.json */; };
+		EB278E9425886EF700DCD16C /* GraphQLTableViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EB278E9325886EF700DCD16C /* GraphQLTableViewController.graphql */; };
+		EB278E9725886F1000DCD16C /* GraphQLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB278E9625886F1000DCD16C /* GraphQLTableViewController.swift */; };
+		EB278ECB25887A7600DCD16C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB278ECA25887A7600DCD16C /* API.swift */; };
 		EB6C015D258845FA003827AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C015C258845FA003827AD /* AppDelegate.swift */; };
 		EB6C015F258845FA003827AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C015E258845FA003827AD /* SceneDelegate.swift */; };
 		EB6C0164258845FA003827AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6C0162258845FA003827AD /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 		20938252C21EBFA938D41F06 /* Pods_MySmashHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySmashHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE7F6B72CD6E13A65FCADD8 /* Pods-MySmashHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySmashHub.release.xcconfig"; path = "Target Support Files/Pods-MySmashHub/Pods-MySmashHub.release.xcconfig"; sourceTree = "<group>"; };
 		BBBBD45A4E3C50960C629D4E /* Pods-MySmashHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySmashHub.debug.xcconfig"; path = "Target Support Files/Pods-MySmashHub/Pods-MySmashHub.debug.xcconfig"; sourceTree = "<group>"; };
+		EB278E8F25886A5D00DCD16C /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		EB278E9325886EF700DCD16C /* GraphQLTableViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GraphQLTableViewController.graphql; sourceTree = "<group>"; };
+		EB278E9625886F1000DCD16C /* GraphQLTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLTableViewController.swift; sourceTree = "<group>"; };
+		EB278ECA25887A7600DCD16C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = MySmashHub/Helpers/GraphQL/API.swift; sourceTree = SOURCE_ROOT; };
 		EB6C0159258845FA003827AD /* MySmashHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySmashHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6C015C258845FA003827AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB6C015E258845FA003827AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +62,6 @@
 				BBBBD45A4E3C50960C629D4E /* Pods-MySmashHub.debug.xcconfig */,
 				5CE7F6B72CD6E13A65FCADD8 /* Pods-MySmashHub.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,7 @@
 				EB6C017525884611003827AD /* Models */,
 				EB6C017425884611003827AD /* Views */,
 				EB6C017325884611003827AD /* Controllers */,
+				EBEC59432588581F005BC2D5 /* Helpers */,
 				EB6C01722588460F003827AD /* Resources */,
 			);
 			path = MySmashHub;
@@ -103,6 +111,8 @@
 		EB6C017325884611003827AD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EB278E9625886F1000DCD16C /* GraphQLTableViewController.swift */,
+				EB278E9325886EF700DCD16C /* GraphQLTableViewController.graphql */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +147,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		EBEC59432588581F005BC2D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EBEC594425885823005BC2D5 /* GraphQL */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EBEC594425885823005BC2D5 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				EB278ECA25887A7600DCD16C /* API.swift */,
+				EB278E8F25886A5D00DCD16C /* schema.json */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB6C016D258845FB003827AD /* Build configuration list for PBXNativeTarget "MySmashHub" */;
 			buildPhases = (
+				EB278E9E2588740E00DCD16C /* Generate Apollo GraphQL API */,
 				7F591105CAF600E8E5636E63 /* [CP] Check Pods Manifest.lock */,
 				EB6C0155258845FA003827AD /* Sources */,
 				EB6C0156258845FA003827AD /* Frameworks */,
@@ -196,9 +224,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB278E9025886A5D00DCD16C /* schema.json in Resources */,
 				EB6C0169258845FB003827AD /* LaunchScreen.storyboard in Resources */,
 				EB6C0166258845FB003827AD /* Assets.xcassets in Resources */,
 				EB6C0164258845FA003827AD /* Main.storyboard in Resources */,
+				EB278E9425886EF700DCD16C /* GraphQLTableViewController.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +274,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySmashHub/Pods-MySmashHub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EB278E9E2588740E00DCD16C /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -252,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6C015D258845FA003827AD /* AppDelegate.swift in Sources */,
+				EB278E9725886F1000DCD16C /* GraphQLTableViewController.swift in Sources */,
+				EB278ECB25887A7600DCD16C /* API.swift in Sources */,
 				EB6C015F258845FA003827AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
