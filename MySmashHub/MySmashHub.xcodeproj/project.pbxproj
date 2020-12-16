@@ -12,6 +12,7 @@
 		EB278E9425886EF700DCD16C /* GraphQLTableViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EB278E9325886EF700DCD16C /* GraphQLTableViewController.graphql */; };
 		EB278E9725886F1000DCD16C /* GraphQLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB278E9625886F1000DCD16C /* GraphQLTableViewController.swift */; };
 		EB278ECB25887A7600DCD16C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB278ECA25887A7600DCD16C /* API.swift */; };
+		EB278ED42589341600DCD16C /* TournamentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB278ED32589341600DCD16C /* TournamentController.swift */; };
 		EB6C015D258845FA003827AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C015C258845FA003827AD /* AppDelegate.swift */; };
 		EB6C015F258845FA003827AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C015E258845FA003827AD /* SceneDelegate.swift */; };
 		EB6C0164258845FA003827AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6C0162258845FA003827AD /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		EB278E9325886EF700DCD16C /* GraphQLTableViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GraphQLTableViewController.graphql; sourceTree = "<group>"; };
 		EB278E9625886F1000DCD16C /* GraphQLTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLTableViewController.swift; sourceTree = "<group>"; };
 		EB278ECA25887A7600DCD16C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = MySmashHub/Helpers/GraphQL/API.swift; sourceTree = SOURCE_ROOT; };
+		EB278ED32589341600DCD16C /* TournamentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentController.swift; sourceTree = "<group>"; };
 		EB6C0159258845FA003827AD /* MySmashHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySmashHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6C015C258845FA003827AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB6C015E258845FA003827AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				EB278E9625886F1000DCD16C /* GraphQLTableViewController.swift */,
 				EB278E9325886EF700DCD16C /* GraphQLTableViewController.graphql */,
+				EB278ED32589341600DCD16C /* TournamentController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				EB6C015D258845FA003827AD /* AppDelegate.swift in Sources */,
 				EB278E9725886F1000DCD16C /* GraphQLTableViewController.swift in Sources */,
 				EB278ECB25887A7600DCD16C /* API.swift in Sources */,
+				EB278ED42589341600DCD16C /* TournamentController.swift in Sources */,
 				EB6C015F258845FA003827AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
