@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Apollo
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        ApolloNetwork.shared.apolloURL.fetch(query: LeagueScheduleQuery()) { result in
+          switch result {
+          case .success(let graphQLResult):
+            print("Success! Result: \(graphQLResult)")
+          case .failure(let error):
+            print("Failure! Error: \(error), \(error.localizedDescription)")
+          }
+        }
         return true
     }
 
