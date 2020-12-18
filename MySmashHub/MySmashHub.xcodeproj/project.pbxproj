@@ -14,6 +14,7 @@
 		EB278ECB25887A7600DCD16C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB278ECA25887A7600DCD16C /* API.swift */; };
 		EB278ED42589341600DCD16C /* TournamentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB278ED32589341600DCD16C /* TournamentController.swift */; };
 		EB278EF125898A4E00DCD16C /* TournamentController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EB278EF025898A4E00DCD16C /* TournamentController.graphql */; };
+		EB4DF694258AC2050069F732 /* ApolloHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4DF693258AC2050069F732 /* ApolloHelper.swift */; };
 		EB6C015D258845FA003827AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C015C258845FA003827AD /* AppDelegate.swift */; };
 		EB6C015F258845FA003827AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C015E258845FA003827AD /* SceneDelegate.swift */; };
 		EB6C0164258845FA003827AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6C0162258845FA003827AD /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		EB278ECA25887A7600DCD16C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = MySmashHub/Helpers/GraphQL/API.swift; sourceTree = SOURCE_ROOT; };
 		EB278ED32589341600DCD16C /* TournamentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentController.swift; sourceTree = "<group>"; };
 		EB278EF025898A4E00DCD16C /* TournamentController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = TournamentController.graphql; sourceTree = "<group>"; };
+		EB4DF693258AC2050069F732 /* ApolloHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloHelper.swift; sourceTree = "<group>"; };
 		EB6C0159258845FA003827AD /* MySmashHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySmashHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6C015C258845FA003827AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB6C015E258845FA003827AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			children = (
 				EB278ECA25887A7600DCD16C /* API.swift */,
 				EB278E8F25886A5D00DCD16C /* schema.json */,
+				EB4DF693258AC2050069F732 /* ApolloHelper.swift */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -177,8 +180,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB6C016D258845FB003827AD /* Build configuration list for PBXNativeTarget "MySmashHub" */;
 			buildPhases = (
-				EB278E9E2588740E00DCD16C /* Generate Apollo GraphQL API */,
 				7F591105CAF600E8E5636E63 /* [CP] Check Pods Manifest.lock */,
+				EB278E9E2588740E00DCD16C /* Generate Apollo GraphQL API */,
 				EB6C0155258845FA003827AD /* Sources */,
 				EB6C0156258845FA003827AD /* Frameworks */,
 				EB6C0157258845FA003827AD /* Resources */,
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4DF694258AC2050069F732 /* ApolloHelper.swift in Sources */,
 				EB6C015D258845FA003827AD /* AppDelegate.swift in Sources */,
 				EB278E9725886F1000DCD16C /* GraphQLTableViewController.swift in Sources */,
 				EB278ECB25887A7600DCD16C /* API.swift in Sources */,
